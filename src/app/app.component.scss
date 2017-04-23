@@ -1,0 +1,30 @@
+
+@import '../_vars';
+
+
+.wrapper {
+  // display: flex;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: absolute;
+  width: $sidebar-width;
+  height: 100%;
+  background: $nav-back;
+}
+
+.content {
+  // flex: ;
+  height: 100% ;
+  width: 100%;
+  position: absolute;
+  background: $background-color-light;
+  transform: translate3d(0,0,0);
+  transition: transform .3s;
+
+  &.isOpen {
+    transform: translate3d($sidebar-width,0,0);
+  }
+}

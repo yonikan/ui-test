@@ -1,0 +1,8 @@
+
+<div>
+  <h2>widget works!</h2>
+  <app-list-item *ngFor="let item of listItems; let i=index; let last=last"
+                 [inputItemIndex]="i+1"
+                 [inputItemIsLast]="last">
+  </app-list-item>
+</div>

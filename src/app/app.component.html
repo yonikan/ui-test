@@ -1,3 +1,22 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class="wrapper">
+    <div class="sidebar">
+      <app-navigation></app-navigation>
+    </div>
+    <div class="content" [ngClass]="{ 'isOpen': isOpen }">
+      <app-header [inputIsOpen]="isOpen" (onClick)="onNavClick($event)"></app-header>
+      <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+
+
+
+<!--<app-navigation></app-navigation>
+
+<app-header></app-header>
+
+<router-outlet></router-outlet>-->
+
+<!--<app-home></app-home>-->

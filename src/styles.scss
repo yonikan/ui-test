@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '_vars';
+@import url(./assets/fonts/roboto/font.css);
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $background-color-light;
+  overflow-x: hidden;
+}

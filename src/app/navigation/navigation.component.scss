@@ -1,0 +1,40 @@
+
+@import '../../_vars';
+
+
+img {
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 43px;
+}
+
+ul.nav {
+  font-size: 17px;
+  line-height: 3;
+  font-weight: 400;
+  list-style: none;
+  padding-left: 0px;
+
+  li {
+    border-bottom: 1px solid $nav-border-bottom;
+
+    i {
+      color: $primary;
+      margin-right: 1px;
+      padding-left: 30px;
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  li:hover {
+    background: $nav-selected-back;
+  }
+}
+
+.active {
+  box-shadow: inset 7px 0 0 $primary, inset 6px 0 0 #222;
+  background: $nav-selected-back;
+}

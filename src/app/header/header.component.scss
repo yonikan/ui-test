@@ -1,0 +1,48 @@
+
+@import '../../_vars';
+
+
+.header {
+  color: #0e1a35;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: $white;
+  border-bottom: 1px solid $border-color-light;
+
+  .material-icons {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  .right {
+        // right: 195px;
+        // position: relative;
+        float: right;
+
+        .btn {
+          vertical-align: 4px;
+          font-size: 14px;
+          color: $white;
+          background-color: $primary;
+          padding: 8px 18px;
+          border: 0;
+          border-radius: 50px;
+          margin-right: 25px;
+
+          .material-icons {
+            font-size: 20px;
+            color: $header-icon-light;
+            margin-right: 0;
+          }
+        }
+
+        img {
+          height: 35px;
+          width: 35px;
+          border-radius: 50px;
+          vertical-align: -10px;
+        }
+    }
+}
+
+

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+  isOpen = false;
+
+  constructor() { }
+
+  onNavClick(isOpen: boolean) {
+    this.isOpen = isOpen;
+    // isOpen ? this.isOpen : this.isClosed;
+  }
 }
